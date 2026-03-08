@@ -10,6 +10,9 @@ import { useCauses, Cause } from "@/hooks/useCauses";
 import causeEducation from "@/assets/cause-education.jpg";
 import causeElderly from "@/assets/cause-elderly.jpg";
 import causeWater from "@/assets/cause-water.jpg";
+import causeHealth from "@/assets/cause-health.jpg";
+import causeFood from "@/assets/cause-food.jpg";
+import causeEnvi from "@/assets/cause-environment.jpg";
 
 const categories = ["All", "Education", "Healthcare", "Elderly Care", "Clean Water", "Food Security", "Environment"];
 
@@ -18,9 +21,9 @@ const categoryImages: Record<string, string> = {
   "Education": causeEducation,
   "Elderly Care": causeElderly,
   "Clean Water": causeWater,
-  "Healthcare": causeEducation,
-  "Food Security": causeElderly,
-  "Environment": causeWater,
+  "Healthcare": causeHealth,
+  "Food Security": causeFood,
+  "Environment": causeEnvi,
 };
 
 // Static fallback data with categories
@@ -74,7 +77,7 @@ const staticCauses: (Cause & { category?: string })[] = [
     id: "static-4",
     title: "Community Health Clinic",
     description: "Providing free healthcare services and medicines to underprivileged families.",
-    image_url: causeEducation,
+    image_url: causeHealth,
     raised_amount: 67000,
     target_amount: 120000,
     ngo_id: "static-ngo-4",
@@ -89,7 +92,7 @@ const staticCauses: (Cause & { category?: string })[] = [
     id: "static-5",
     title: "Zero Hunger Campaign",
     description: "Distributing nutritious meals to homeless and hungry families every day.",
-    image_url: causeElderly,
+    image_url: causeFood,
     raised_amount: 95000,
     target_amount: 200000,
     ngo_id: "static-ngo-5",
